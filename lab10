@@ -12,7 +12,7 @@ public class lab10 {    //задание 1
         return l;
     }
         public static void main(String[] args) {
-            //test ex 1:
+  
             String[] a = new String[]{"Hello", "world", "!"};
             ArrayList<String> l = arrayToList(a);
             System.out.println(l);
