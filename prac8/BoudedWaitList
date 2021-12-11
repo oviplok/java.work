@@ -1,0 +1,38 @@
+
+import java.util.Collection;
+
+public class BoundedWaitList <E> extends WaitList<E>{
+    private int capacity;
+
+    public BoundedWaitList(int capacity){
+        super();
+        if(capacity <= 0){
+            throw new IllegalArgumentException("The max size must be more than 0. Received value: " + capacity);
+        }
+        else{
+            this.capacity = capacity;
+        }
+    }
+
+    public BoundedWaitList(Collection<E> col){
+        super(col);
+        this.capacity = col.size();
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void add(Object element) {
+        if(components.size() > capacity) {
+            throw new IllegalStateException("filled");
+        }
+        else{
+            components.add((E) element);
+        }
+    }
+
+    public String toString() {
+        return " " + components;
+    }
+
