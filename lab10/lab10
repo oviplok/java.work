@@ -13,7 +13,7 @@ public class lab10 {    //задание 1
         return l;
     }
         public static void main(String[] args) {
-            String[] a = new String[]{"1", "hi", "!","as","s2","3","2"};
+            String[] a = new String[]{"hello", "World", "!"};
             ArrayList<String> l = arrayToList(a);
             System.out.println(l);
             System.out.println();
