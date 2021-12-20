@@ -15,8 +15,8 @@ public class lab10 {    //задание 1
         public static void main(String[] args) {
             String[] a = new String[]{"hello", "World", "!"};
             ArrayList<String> l = arrayToList(a);
+            System.out.println(line[0] + " " + line[1] + " " + line[2]);
             System.out.println(l);
-            System.out.println();
 
         }
 }
